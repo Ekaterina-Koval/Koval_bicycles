@@ -1,0 +1,4 @@
+.page__body--not-available:not(.nav) {
+  filter: blur(2px);
+  pointer-events: none;
+}

@@ -1,15 +1,33 @@
 'use strict';
-var pageHeader = document.querySelector('.page-header');
-var headerToggle = document.querySelector('.page-header__toggle');
 
-pageHeader.classList.remove('page-header--nojs');
+const body = document.querySelector('.page__body');
+const navMain = body.querySelector('.nav');
+const navToggle = body.querySelector('.nav__toggle');
+const navLinks = body.querySelectorAll('.nav__link');
+const pageMain = body.querySelector('.page-main');
+const pageFooter = body.querySelector('.page-footer');
+const headerMain = body.querySelector('.page-header__main');
 
-headerToggle.addEventListener('click', function () {
-  if (pageHeader.classList.contains('page-header--closed')) {
-    pageHeader.classList.remove('page-header--closed');
-    pageHeader.classList.add('page-header--opened');
+
+navMain.classList.remove('nav--nojs');
+
+const navSvitches = () => {
+  if (navMain.classList.contains('nav--closed')) {
+    navMain.classList.remove('nav--closed');
+    navMain.classList.add('nav--opened');
+    pageMain.classList.remove('not-available');
+    pageFooter.classList.remove('not-available');
+    headerMain.classList.remove('not-available');
   } else {
-    pageHeader.classList.add('page-header--closed');
-    pageHeader.classList.remove('page-header--opened');
+    navMain.classList.add('nav--closed');
+    navMain.classList.remove('nav--opened');
+    pageMain.classList.add('not-available');
+    pageFooter.classList.add('not-available');
+    headerMain.classList.add('not-available');
   }
+};
+
+navToggle.addEventListener('click', navSvitches);
+navLinks.forEach( link => {
+  link.addEventListener('click', navSvitches)
 });

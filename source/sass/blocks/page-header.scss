@@ -1,0 +1,75 @@
+.page-header {
+  position: relative;
+  width: 100%;
+  min-height: 825px;
+}
+
+.page-header::before {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: -1;
+  width: 100vw;
+  min-height: 825px;
+  background-image:
+    url("../img/promo-back_large.jpg"),
+    linear-gradient($dark-background, $dark-background);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  @media (min-resolution: 2dppx) {
+    background-image:
+      url("../img/promo-back_large@2x.jpg"),
+      linear-gradient($dark-background, $dark-background);
+  }
+
+  @media (max-width: $medium-width) {
+    min-height: 340px;
+    background-image:
+      url("../img/promo-back_medium.jpg"),
+      linear-gradient($dark-background, $dark-background);
+
+    @media (min-resolution: 2dppx) {
+      background-image:
+        url("../img/promo-back_medium@2x.jpg"),
+        linear-gradient($dark-background, $dark-background);
+    }
+  }
+
+  @media (max-width: $small-width) {
+    min-height: 390px;
+    background-image:
+      url("../img/promo-back_small.jpg"),
+      linear-gradient($dark-background, $dark-background);
+
+    @media (min-resolution: 2dppx) {
+      background-image:
+        url("../img/promo-back_small@2x.jpg"),
+        linear-gradient($dark-background, $dark-background);
+    }
+  }
+}
+
+.page-header__header {
+  min-height: 63px;
+  position: relative;
+
+  @media (max-width: $medium-width) {
+    @include display-flex-wrap;
+    justify-content: space-between;
+    min-height: 50px;
+  }
+}
+
+.page-header__logo {
+  @media (min-width: $large-width-only) {
+    position: absolute;
+    top: 318px;
+    left: 280px;
+  }
+
+  @media (max-width: $medium-width) {
+    padding-top: 23px;
+  }
+}

@@ -1,0 +1,126 @@
+.nav {
+  @include display-flex-wrap;
+  justify-content: center;
+  position: relative;
+  margin: 0 144px;
+
+  @media (max-width: $medium-width) {
+    position: absolute;
+    margin: 0;
+    right: 35px;
+    z-index: 1;
+  }
+}
+
+.nav__list {
+  @include reset-list;
+  @include display-flex-wrap;
+  justify-content: space-between;
+  width: 100%;
+  min-height: 62px;
+  border-bottom: 1px solid $basic-white-opacity02;
+
+  @media (max-width: $medium-width) {
+    flex-direction: column;
+    max-width: 320px;
+    padding: 100px 0;
+    background-color: $basic-white;
+    border-bottom: none;
+  }
+}
+
+.nav__item {
+  padding: 20px 18px 10px;
+
+  @media (max-width: $medium-width) {
+    position: relative;
+    min-height: 28px;
+    margin-bottom: 30px;
+    padding: 14px;
+    background-color: $light-background;
+  }
+}
+
+.nav__link {
+  font-weight: 300;
+  text-align: center;
+  text-decoration: none;
+  color: $basic-white-opacity07;
+
+  @media (max-width: $medium-width) {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: $nav-text;
+
+    &::before {
+      position: absolute;
+      top: 24px;
+      right: 20px;
+      content: "";
+      display: block;
+      width: 8px;
+      height: 12px;
+      background-image: url("../img/icon-arrowlink.svg");
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+.nav__toggle {
+  display: none;
+
+  @media (max-width: $medium-width) {
+    display: block;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    border: none;
+  }
+}
+
+@media (max-width: $medium-width) {
+  .nav {
+    &--opened {
+      .nav__toggle {
+        right: -35px;
+        background-image: url("../img/icon-nav-opened.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 30px 30px;
+        background-color: $accent-main;
+      }
+
+      .nav__list {
+        display: none;
+      }
+    }
+
+    &--closed {
+      .nav__toggle {
+        right: 0;
+        background-color: $basic-white;
+        background-image: url("../img/icon-nav-closed.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 30px 30px;
+      }
+    }
+
+    &--nojs {
+      width: 100%;
+      min-height: 568px;
+
+      .nav__list {
+        display: block;
+        position: absolute;
+      }
+
+      .nav__toggle {
+        display: none;
+      }
+    }
+  }
+}

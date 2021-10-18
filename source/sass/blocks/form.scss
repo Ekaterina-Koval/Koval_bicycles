@@ -1,0 +1,62 @@
+.form__fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.form__legend {
+  margin-bottom: 20px;
+  padding: 0;
+  text-align: center;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 28px;
+  color: $basic-white;
+
+  @media (max-width: $medium-width) {
+    margin-bottom: 30px;
+    font-size: 18px;
+    color: $basic-black;
+  }
+}
+
+.form__list {
+  @include reset-list;
+}
+
+.form__item {
+  margin-bottom: 20px;
+  padding: 8px 29px;
+  width: 100%;
+  min-height: min-content;
+  background-color: $basic-white;
+  border: 1px solid $basic-border;
+  box-sizing: border-box;
+  border-radius: 6px;
+
+  @media (max-width: $medium-width) {
+    padding: 7px 21px;
+  }
+}
+
+.form__input {
+  width: 100%;
+  min-height: min-content;
+  border: none;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.form__submit {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  min-height: 51px;
+  background-color: $accent-main;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 21px;
+  border: none;
+  border-radius: 6px;
+}
