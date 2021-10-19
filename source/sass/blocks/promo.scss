@@ -2,16 +2,16 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 21%;
-  min-height: 760px;
+  grid-template-rows: auto;
   margin: 0;
   padding: 0 12%;
   box-sizing: border-box;
 
   @media (max-width: $medium-width) {
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 290px;
+    grid-template-rows: 284px auto;
     padding: 0 20%;
-    gap: 60px;
+    gap: 70px;
   }
 
   @media (max-width: $small-width) {
