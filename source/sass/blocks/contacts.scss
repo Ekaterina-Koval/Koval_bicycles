@@ -1,0 +1,5 @@
+.contacts {
+  @include display-flex-wrap;
+  flex-direction: column;
+  width: 100%;
+}

@@ -7,9 +7,22 @@ const navLinks = body.querySelectorAll('.nav__link');
 const pageMain = body.querySelector('.page-main');
 const pageFooter = body.querySelector('.page-footer');
 const headerMain = body.querySelector('.page-header__main');
+const userName = document.querySelector('[name=username]');
+const eMail = document.querySelector('[name=email]');
 
 
 navMain.classList.remove('nav--nojs');
+
+let isStorageSupport = true;
+let storageName = '';
+let storageEMail = '';
+
+try {
+  storageName = localStorage.getItem('username');
+  storageEMail = localStorage.getItem('email');
+} catch (err) {
+  isStorageSupport = false;
+}
 
 const navSvitches = () => {
   if (navMain.classList.contains('nav--closed')) {

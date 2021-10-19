@@ -1,47 +1,42 @@
 .promo__wrapper {
-  @include display-flex-wrap;
-  justify-content: space-between;
-  min-height: 762px;
-  padding: 20px 140px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 21%;
+  min-height: min-content;
+  margin: 0;
+  padding: 0 12%;
   box-sizing: border-box;
 
-  @media (max-width: 1296px) {
-    padding: 20px 40px 0;
-  }
-
   @media (max-width: $medium-width) {
-    flex-direction: column;
-    justify-content: flex-start;
-    min-height: 700px;
-    padding: 0 172px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 290px;
+    padding: 0 20%;
+    gap: 60px;
   }
 
   @media (max-width: $small-width) {
-    padding: 66px 0;
+    grid-template-rows: 334px auto;
+    gap: 72px;
+    padding: 0;
   }
 }
 
 .promo__content {
-  width: 40%;
-  padding-top: 284px;
+  padding-top: 304px;
 
   @media (max-width: $medium-width) {
     width: 100%;
-    margin-bottom: 74px;
-    height: 200px;
     padding-top: 80px;
     overflow-y: auto;
   }
 
   @media (max-width: $small-width) {
-    height: 268px;
-    margin-bottom: 72px;
-    padding: 0;
+    padding-top: 64px;
   }
 }
 
 .promo__title {
-  margin: 0 0 24px;
+  margin: 0 0 20px;
   font-weight: 700;
   font-size: 46px;
   line-height: 64px;
@@ -77,17 +72,18 @@
 }
 
 .promo__form {
-  width: 37%;
+  width: 100%;
   align-self: center;
+  padding: 20px 0 0 20px;
+  box-sizing: border-box;
 
   @media (max-width: $medium-width) {
     width: 100%;
-    padding: 0 30px;
-    box-sizing: border-box;
+    padding: 0 58px;
   }
 
   @media (max-width: $small-width) {
-    max-width: 288px;
+    min-height: 286px;
     padding: 0;
   }
 }
