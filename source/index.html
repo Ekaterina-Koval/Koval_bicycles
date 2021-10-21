@@ -27,7 +27,7 @@
     <h1 class="visually-hidden">Магазин велосипедов Moon</h1>
     <div class="page-header__header container">
       <div class="page-header__logo logo">
-        <a class="logo__link" href="#" aria-label="Ссылка на главную страницу">
+        <a class="logo__link" href="" aria-label="Ссылка на главную страницу">
           <img class="logo__img" src="img/logo.svg" width="68" height="21" alt="Логотип магазина велосипедов Moon">
         </a>
       </div>
@@ -126,12 +126,9 @@
           <a class="bike-types__link" href="#" aria-label="Смотреть информацию о дорожных велосипедах">
             <picture>
               <!--<source type="image/webp" srcset="img/type-road_small.webp 1x, img/type-road_small@2x.webp 2x"
-                media="(min-width: 767px)">
-              <source type="image/web p" srcset="img/type-road_medium.webp 1x, img/type-road_medium@2x.webp 2x"
-                media="(max-width: 1023px)">
+                media="(min-width: 1023px)">
               <source type="image/webp" srcset="img/type-road_large.webp 1x, img/type-road_large@2x.webp 2x">-->
-              <source media="(max-width: 767px)" srcset="img/type-road_small.png 1x, img/type-road_small@2x.png 2x">
-              <source media="(max-width: 1023px)" srcset="img/type-road_medium.png 1x, img/type-road_medium@2x.png 2x">
+              <source media="(max-width: 1023px)" srcset="img/type-road_small.jpg 1x, img/type-road_small@2x.jpg 2x">
               <img class="bike-types__img" src="img/type-road_large.jpg" srcset="img/type-road_large.jpg 2x" width="342"
                 height="566" alt="Дорожный велосипед с корзиной">
             </picture>
@@ -144,14 +141,10 @@
           <a class="bike-types__link" href="#" aria-label="Смотреть информацию о горных велосипедах">
             <picture>
               <!--<source type="image/webp" srcset="img/type-mountain_small.webp 1x, img/type-mountain_small@2x.webp 2x"
-                media="(min-width: 767px)">
-              <source type="image/web p" srcset="img/type-mountain_medium.webp 1x, img/type-mountain_medium@2x.webp 2x"
-                media="(max-width: 1023px)">
+                media="(min-width: 1023px)">
               <source type="image/webp" srcset="img/type-mountain_large.webp 1x, img/type-mountain_large@2x.webp 2x">-->
-              <source media="(max-width: 767px)"
-                srcset="img/type-mountain_small.png 1x, img/type-mountain_small@2x.png 2x">
               <source media="(max-width: 1023px)"
-                srcset="img/type-mountain_medium.png 1x, img/type-mountain_medium@2x.png 2x">
+                srcset="img/type-mountain_small.jpg 1x, img/type-mountain_small@2x.jpg 2x">
               <img class="bike-types__img" src="img/type-mountain_large.jpg" srcset="img/type-mountain_large.jpg 2x"
                 width="342" height="566" alt="Велосипед на фоне гор">
             </picture>
@@ -164,13 +157,9 @@
           <a class="bike-types__link" href="#" aria-label="Смотреть информацию о детских велосипедах">
             <picture>
               <!--<source type="image/webp" srcset="img/type-child_small.webp 1x, img/type-child_small@2x.webp 2x"
-                media="(min-width: 767px)">
-              <source type="image/web p" srcset="img/type-child_medium.webp 1x, img/type-child_medium@2x.webp 2x"
                 media="(max-width: 1023px)">
               <source type="image/webp" srcset="img/type-child_large.webp 1x, img/type-child_large@2x.webp 2x">-->
-              <source media="(max-width: 767px)" srcset="img/type-child_small.png 1x, img/type-child_small@2x.png 2x">
-              <source media="(max-width: 1023px)"
-                srcset="img/type-child_medium.png 1x, img/type-child_medium@2x.png 2x">
+              <source media="(max-width: 1023px)" srcset="img/type-child_small.jpg 1x, img/type-child_small@2x.jpg 2x">
               <img class="bike-types__img" src="img/type-child_large.jpg" srcset="img/type-child_large.jpg 2x"
                 width="342" height="566" alt="Детский велосипед розовый с белым">
             </picture>
@@ -179,8 +168,10 @@
             </h3>
           </a>
         </li>
+
       </ul>
     </section>
+
     <section class="bike-video" id="video">
       <div class="bike-video__wrapper container">
         <h2 class="bike-video__title">
@@ -189,8 +180,21 @@
         <p class="bike-video__desc">
           В этом видео мы подробно расскажем про особенности выбора велосипеда для себя
         </p>
-        <div class="">
+        <div class="bike-video__img-wrapper">
+          <button class="bike-video__toggle">
+            <span class="visually-hidden">Смотреть видео</span>
+            <svg class="bike-video__icon" width="14" height="19" viewBox="0 0 14 19" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="img/sprite_auto.svg#icon-play"></use>
+            </svg>
+          </button>
         <picture>
+          <!--<source type="image/webp" srcset="img/video-img_small.webp 1x, img/video-img_small@2x.webp 2x"
+                          media="(min-width: 767px)">
+                        <source type="image/web p" srcset="img/video-img_medium.webp 1x, img/video-img_medium@2x.webp 2x"
+                          media="(max-width: 1023px)">
+                        <source type="image/webp" srcset="img/video-img_large.webp 1x, img/video-img_large@2x.webp 2x">-->
+          <source media="(max-width: 767px)" srcset="img/video-img_small.jpg 1x, img/video-img_small@2x.jpg 2x">
+          <source media="(max-width: 1023px)" srcset="img/video-img_medium.jpg 1x, img/video-img_medium@2x.jpg 2x">
         <img class="bike-video__img" src="./img/video-img_large.jpg" srcset="./img/video-img_large@2x.jpg 2x"
           width="930" height="522" alt="Заставка с чёрным велосипедом">
         </picture>
@@ -198,13 +202,12 @@
       </div>
     </section>
   </main>
-
   <footer class="page-footer " id="contacts">
     <section class="page-footer__contacts container">
-      <div class="contacts">
-        <div class="contacts__location">
+      <div class="contacts ">
+        <div class="contacts__location ">
           <h2 class="contacts__title">Как нас найти?</h2>
-          <address class="contacts__adress">
+          <address class="contacts__address">
             Мы находимся по&nbsp;адресу: Санкт-Петербург, ул.&nbsp;Большая Конюшенная,&nbsp;д.&nbsp;19
           </address>
         </div>

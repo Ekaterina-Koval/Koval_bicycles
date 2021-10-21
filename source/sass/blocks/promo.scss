@@ -2,11 +2,11 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 21%;
-  grid-template-rows: 766px;
+  grid-template-rows: min(766px);
   margin: 0;
   padding: 0 12%;
   box-sizing: border-box;
-  overflow-y: auto;
+  overflow: visible;
 
   @media (max-width: $medium-width) {
     grid-template-columns: 1fr;
@@ -24,7 +24,7 @@
 
 .promo__content {
   padding-top: 304px;
-  overflow-y: auto;
+  overflow: visible;
 
   @media (max-width: $medium-width) {
     width: 100%;

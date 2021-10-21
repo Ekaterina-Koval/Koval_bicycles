@@ -18,6 +18,10 @@
     font-size: 18px;
     color: $basic-black;
   }
+
+  @media (max-width: $small-width) {
+    margin-bottom: 20px;
+  }
 }
 
 .form__list {

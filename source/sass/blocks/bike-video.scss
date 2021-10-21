@@ -1,32 +1,129 @@
 .bike-video {
   width: 100%;
-  height: 706px;
-  background-color: $dark-background;
+  background-image: linear-gradient($dark-background, $dark-background);
+  background-size: 100% 706px;
+  background-position: top;
+  background-repeat: no-repeat;
+
+  @media (max-width: $medium-width) {
+    background-size: 100% 413px;
+  }
+
+  @media (max-width: $medium-width) {
+    background-size: 100% 384px;
+  }
 }
 
 .bike-video__wrapper {
   padding-top: 120px;
+  padding-bottom: 156px;
+
+  @media (max-width: $medium-width) {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  @media (max-width: $small-width) {
+    padding-top: 82px;
+    padding-bottom: 70px;
+  }
 }
 
 .bike-video__title {
-  margin: 0;
+  margin: 0 auto 20px;
   text-align: center;
   font-weight: 600;
   font-size: 30px;
   line-height: 30px;
   color: $basic-white;
+
+  @media (max-width: $medium-width) {
+    font-size: 24px;
+    line-height: 30px;
+  }
 }
 
 .bike-video__desc {
-  width: 30%;
-  margin: 0 auto;
+  width: 26%;
+  margin: 0 auto 55px;
   text-align: center;
   font-weight: 300;
   line-height: 28px;
   color: $basic-white-opacity07;
+
+  @media (max-width: $medium-width) {
+    width: 60%;
+    margin-bottom: 40px;
+  }
+
+  @media (max-width: $small-width) {
+    width: 100%;
+    margin-bottom: 56px;
+  }
+}
+
+.bike-video__img-wrapper {
+  position: relative;
+  padding: 0 254px;
+
+  @media (max-width: $medium-width) {
+    padding: 0 112px;
+  }
+
+  @media (max-width: $small-width) {
+    padding: 0 16px;
+  }
+}
+
+.bike-video__toggle {
+  position: absolute;
+  top: 44%;
+  left: 48%;
+  width: 65px;
+  height: 65px;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  background-color: $accent-main;
+
+  @media (max-width: $medium-width) {
+    width: 90px;
+    height: 90px;
+    top: 34%;
+    left: 44%;
+  }
+
+  @media (max-width: $small-width) {
+    width: 65px;
+    height: 65px;
+    top: 30%;
+    left: 38%;
+  }
 }
 
 .bike-video__img {
   display: block;
-  margin: 0 auto;
+  width: 100%;
+  height: 522px;
+  object-fit: cover;
+
+  @media (max-width: $medium-width) {
+    height: 282px;
+  }
+
+  @media (max-width: $small-width) {
+    height: 161px;
+  }
+}
+
+.bike-video__icon {
+  @media (max-width: $medium-width) {
+    width: 18px;
+    height: 25px;
+  }
+
+  @media (max-width: $small-width) {
+    width: 13px;
+    height: 18px;
+  }
 }
