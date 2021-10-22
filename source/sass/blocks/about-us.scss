@@ -10,7 +10,7 @@
   }
 }
 
-.about-us__title {
+.about-us h2 {
   margin: 18px auto 48px;
   text-align: center;
   font-weight: 600;
@@ -26,7 +26,7 @@
   }
 }
 
-.about-us__list {
+.about-us ol {
   @include reset-list;
   @include display-flex-wrap;
   list-style-type: none;
@@ -34,7 +34,7 @@
   justify-content: space-between;
 }
 
-.about-us__item {
+.about-us li {
   position: relative;
   width: 23%;
   min-height: 70px;
@@ -56,11 +56,12 @@
   }
 }
 
-.about-us__item::before {
+.about-us li::before {
   content: "0"counters(num, "");
   counter-increment: num;
   display: inline-block;
   position: absolute;
+  vertical-align: auto;
   top: 0;
   left: 44px;
   width: 100px;

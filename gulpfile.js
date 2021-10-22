@@ -30,8 +30,7 @@ gulp.task("css", function () {
 });
 
 gulp.task("js", function () {
-  return gulp.src("source/js/script.js")
-    .pipe(rename("script.min.js"))
+  return gulp.src("source/js/*.js")
     .pipe(gulp.dest("source/js"))
     .pipe(gulp.dest("build/js"))
     .pipe(server.stream());

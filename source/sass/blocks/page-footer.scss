@@ -1,0 +1,12 @@
+.page-footer__map-wrapper {
+  padding: 0 17%;
+  margin: 0 auto;
+
+  @media (max-width: $medium-width) {
+    padding: 0 35px;
+  }
+
+  @media (max-width: $small-width) {
+    padding: 0;
+  }
+}

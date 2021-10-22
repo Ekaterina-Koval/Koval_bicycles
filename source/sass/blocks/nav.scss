@@ -13,7 +13,7 @@
   }
 }
 
-.nav__list {
+.nav ul {
   @include reset-list;
   @include display-flex-wrap;
   justify-content: space-between;
@@ -30,7 +30,7 @@
   }
 }
 
-.nav__item {
+.nav li {
   padding: 20px 18px 10px;
 
   @media (max-width: $medium-width) {
@@ -42,7 +42,7 @@
   }
 }
 
-.nav__link {
+.nav a {
   padding: 20px 18px 10px;
   font-weight: 300;
   text-align: center;
