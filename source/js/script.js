@@ -9,8 +9,8 @@ const pageMain = body.querySelector('.page-main');
 const pageFooter = body.querySelector('.page-footer');
 const header = body.querySelector('.page-header');
 const form = body.querySelector('.form');
-const userName = document.querySelector('[name=username]');
-const userTel = document.querySelector('[name=tel]');
+const userName = document.querySelector('#user-name');
+const userPhone = document.querySelector('#user-phone');
 
 navMain.classList.remove('nav--nojs');
 header.classList.remove('page-header--nojs');
@@ -29,14 +29,14 @@ if (storageName) {
   userName.value = storageName;
 }
 if (storageTel) {
-  userTel.value = storageTel;
+  userPhone.value = storageTel;
 }
 
 if (form) {
   form.addEventListener('submit', () => {
     if (isStorageSupport) {
-      if (userTel.value) {
-        localStorage.setItem('tel', userTel.value);
+      if (userPhone.value) {
+        localStorage.setItem('tel', userPhone.value);
       }
       if (userName.value) {
         localStorage.setItem('name', userName.value);

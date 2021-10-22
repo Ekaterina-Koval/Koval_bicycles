@@ -9,8 +9,8 @@ const pageMain = body.querySelector('.page-main');
 const pageFooter = body.querySelector('.page-footer');
 const header = body.querySelector('.page-header');
 const form = body.querySelector('.form');
-const userName = document.querySelector('[name=username]');
-const userTel = document.querySelector('[name=tel]');
+const userName = document.querySelector('#user-name');
+const userTel = document.querySelector('#user-tel');
 
 navMain.classList.remove('nav--nojs');
 header.classList.remove('page-header--nojs');

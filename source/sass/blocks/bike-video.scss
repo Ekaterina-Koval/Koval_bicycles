@@ -62,8 +62,7 @@
   }
 }
 
-.bike-video__img-wrapper {
-  position: relative;
+.bike-video__wrapper {
   margin: 0 auto;
   width: 80%;
 
@@ -102,18 +101,48 @@
   }
 }
 
-.bike-video__img {
+.bike-video__box {
+  position: relative;
   display: block;
   width: 100%;
   height: 522px;
-  object-fit: cover;
+  background-image:
+    url("../img/video-img_large.jpg"),
+    linear-gradient($dark-background, $dark-background);
+
+  @media (min-resolution: 2dppx) {
+    background-image:
+      url("../img/promo-back_small@2x.jpg"),
+      linear-gradient($dark-background, $dark-background);
+  }
+  background-size: cover;
+  background-repeat: no-repeat;
+
 
   @media (max-width: $medium-width) {
     height: 282px;
+    background-image:
+      url("../img/video-img_medium.jpg"),
+      linear-gradient($dark-background, $dark-background);
+
+    @media (min-resolution: 2dppx) {
+      background-image:
+        url("../img/promo-back_medium@2x.jpg"),
+        linear-gradient($dark-background, $dark-background);
+    }
   }
 
   @media (max-width: $small-width) {
     height: 161px;
+    background-image:
+      url("../img/video-img_small.jpg"),
+      linear-gradient($dark-background, $dark-background);
+
+    @media (min-resolution: 2dppx) {
+      background-image:
+        url("../img/promo-back_small@2x.jpg"),
+        linear-gradient($dark-background, $dark-background);
+    }
   }
 }
 
