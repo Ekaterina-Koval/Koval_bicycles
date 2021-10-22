@@ -4,26 +4,45 @@ const body = document.querySelector('.page__body');
 const navMain = body.querySelector('.nav');
 const navToggle = body.querySelector('.nav__toggle');
 const navLinks = body.querySelectorAll('.nav__link');
-const headerMain = body.querySelector('.page-header__main')
+const headerMain = body.querySelector('.page-header__main');
 const pageMain = body.querySelector('.page-main');
 const pageFooter = body.querySelector('.page-footer');
 const header = body.querySelector('.page-header');
+const form = body.querySelector('.form');
 const userName = document.querySelector('[name=username]');
-const eMail = document.querySelector('[name=email]');
-
+const userTel = document.querySelector('[name=tel]');
 
 navMain.classList.remove('nav--nojs');
 header.classList.remove('page-header--nojs');
 
 let isStorageSupport = true;
 let storageName = '';
-let storageEMail = '';
-
+let storageTel = '';
 try {
   storageName = localStorage.getItem('username');
-  storageEMail = localStorage.getItem('email');
+  storageTel = localStorage.getItem('email');
 } catch (err) {
   isStorageSupport = false;
+}
+
+if (storageName) {
+  userName.value = storageName;
+}
+if (storageTel) {
+  userTel.value = storageTel;
+}
+
+if (form) {
+  form.addEventListener('submit', () => {
+    if (isStorageSupport) {
+      if (userTel.value) {
+        localStorage.setItem('tel', userTel.value);
+      }
+      if (userName.value) {
+        localStorage.setItem('name', userName.value);
+      }
+    }
+  });
 }
 
 const navSvitches = () => {
@@ -43,6 +62,6 @@ const navSvitches = () => {
 };
 
 navToggle.addEventListener('click', navSvitches);
-navLinks.forEach( link => {
-  link.addEventListener('click', navSvitches)
+navLinks.forEach(link => {
+  link.addEventListener('click', navSvitches);
 });

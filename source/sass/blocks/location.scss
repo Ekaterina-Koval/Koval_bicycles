@@ -61,7 +61,7 @@
 
   @media (max-width: $small-width) {
     grid-template-columns: 1fr;
-    grid-template-rows: min-content;
+    grid-template-rows: max-content;
   }
 }
 

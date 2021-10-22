@@ -29,6 +29,14 @@ gulp.task("css", function () {
     .pipe(server.stream());
 });
 
+gulp.task("js", function () {
+  return gulp.src("source/js/script.js")
+    .pipe(rename("script.min.js"))
+    .pipe(gulp.dest("source/js"))
+    .pipe(gulp.dest("build/js"))
+    .pipe(server.stream());
+});
+
 gulp.task("server", function () {
   server.init({
     server: "build/",
@@ -97,5 +105,5 @@ gulp.task("clean", function () {
   return del("build");
 });
 
-gulp.task("build", gulp.series("clean", "copy", "css", "sprite", "webp", "html"));
+gulp.task("build", gulp.series("clean", "copy", "css", "js", "sprite", "webp", "html"));
 gulp.task("start", gulp.series("build", "server"));
