@@ -1,0 +1,29 @@
+.header {
+  @include display-flex-wrap;
+  justify-content: center;
+  min-height: 75px;
+
+  @media (max-width: $medium-width) {
+    justify-content: flex-start;
+    min-height: 50px;
+  }
+}
+
+.header__logo {
+  position: absolute;
+  top: 40%;
+  left: 19.5%;
+
+  @media (max-width: $medium-width) {
+    top: 25px;
+    left: 20px;
+  }
+}
+
+.header__nav {
+  width: 77%;
+
+  @media (max-width: $medium-width) {
+    width: 100%;
+  }
+}

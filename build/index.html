@@ -8,29 +8,25 @@
   <meta name="description" content="Продажа велосипедов с доставкой по всей России. Самый широкий выбор лучших велосипедов.">
   <title>Moon - магазин велосипедов</title>
   <link rel="preload" href="css/style.min.css" as="style">
-  <!--<link rel="preload" href="js/script.min.js" as="script">-->
+  <link rel="preload" href="js/script.min.js" as="script">
   <link rel="preload" href="fonts/open-sans-300.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/open-sans-400.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/open-sans-600.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/open-sans-700.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="icon" href="favicon.ico">
-  <!--<link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="img/favicons/apple.png">
-  <link rel="manifest" href="manifest.webmanifest">-->
-
 </head>
 
 <body class="page__body">
-  <header class="page-header">
+  <header class="page-header page-header--nojs">
     <h1 class="visually-hidden">Магазин велосипедов Moon</h1>
-    <div class="page-header__header container">
-      <div class="page-header__logo logo">
+    <div class="page-header__header header container">
+      <div class="header__logo header__logo logo">
         <a class="logo__link" href="" aria-label="Ссылка на главную страницу">
           <img class="logo__img" src="img/logo.svg" width="68" height="21" alt="Логотип магазина велосипедов Moon">
         </a>
       </div>
-      <nav class="page-header__nav nav nav--opened nav--nojs">
+      <nav class="header__nav nav nav--opened nav--nojs">
         <button class="nav__toggle">
           <span class="visually-hidden">Открыть меню</span>
         </button>
@@ -115,55 +111,54 @@
         </ol>
       </div>
     </section>
-    <section class="bike-types container" id="types">
-      <h2 class="bike-types__title">
-        Виды велосипедов
-      </h2>
-      <ul class="bike-types__list">
-        <li class="bike-types__item">
-          <a class="bike-types__link" href="#" aria-label="Смотреть информацию о дорожных велосипедах">
-            <picture>
-              <!--<source type="image/webp" srcset="img/type-road_small.webp 1x, img/type-road_small@2x.webp 2x"
-                media="(min-width: 1023px)">
-              <source type="image/webp" srcset="img/type-road_large.webp 1x, img/type-road_large@2x.webp 2x">-->
-              <source media="(max-width: 1023px)" srcset="img/type-road_small.jpg 1x, img/type-road_small@2x.jpg 2x">
-              <img class="bike-types__img" src="img/type-road_large.jpg" srcset="img/type-road_large.jpg 2x" width="342" height="566" alt="Дорожный велосипед с корзиной">
-            </picture>
-            <h3 class="bike-types__name">
-              Дорожный велосипед
-            </h3>
-          </a>
-        </li>
-        <li class="bike-types__item">
-          <a class="bike-types__link" href="#" aria-label="Смотреть информацию о горных велосипедах">
-            <picture>
-              <!--<source type="image/webp" srcset="img/type-mountain_small.webp 1x, img/type-mountain_small@2x.webp 2x"
-                media="(min-width: 1023px)">
-              <source type="image/webp" srcset="img/type-mountain_large.webp 1x, img/type-mountain_large@2x.webp 2x">-->
-              <source media="(max-width: 1023px)" srcset="img/type-mountain_small.jpg 1x, img/type-mountain_small@2x.jpg 2x">
-              <img class="bike-types__img" src="img/type-mountain_large.jpg" srcset="img/type-mountain_large.jpg 2x" width="342" height="566" alt="Велосипед на фоне гор">
-            </picture>
-            <h3 class="bike-types__name">
-              Горный велосипед
-            </h3>
-          </a>
-        </li>
-        <li class="bike-types__item">
-          <a class="bike-types__link" href="#" aria-label="Смотреть информацию о детских велосипедах">
-            <picture>
-              <!--<source type="image/webp" srcset="img/type-child_small.webp 1x, img/type-child_small@2x.webp 2x"
-                media="(max-width: 1023px)">
-              <source type="image/webp" srcset="img/type-child_large.webp 1x, img/type-child_large@2x.webp 2x">-->
-              <source media="(max-width: 1023px)" srcset="img/type-child_small.jpg 1x, img/type-child_small@2x.jpg 2x">
-              <img class="bike-types__img" src="img/type-child_large.jpg" srcset="img/type-child_large.jpg 2x" width="342" height="566" alt="Детский велосипед розовый с белым">
-            </picture>
-            <h3 class="bike-types__name">
-              Детский велосипед
-            </h3>
-          </a>
-        </li>
-
-      </ul>
+    <section class="bike-types" id="types">
+      <div class="bike-types__wrapper container">
+        <h2 class="bike-types__title">
+          Виды велосипедов
+        </h2>
+        <ul class="bike-types__list">
+          <li class="bike-types__item">
+            <a class="bike-types__link" href="#" aria-label="Смотреть информацию о дорожных велосипедах">
+              <picture>
+                <source type="image/webp" srcset="img/type-road_small.webp 1x, img/type-road_small@2x.webp 2x" media="(min-width: 1023px)">
+                <source type="image/webp" srcset="img/type-road_large.webp 1x, img/type-road_large@2x.webp 2x">
+                <source media="(max-width: 1023px)" srcset="img/type-road_small.jpg 1x, img/type-road_small@2x.jpg 2x">
+                <img class="bike-types__img" src="img/type-road_large.jpg" srcset="img/type-road_large.jpg 2x" width="342" height="566" alt="Дорожный велосипед с корзиной">
+                <!--img size: 767x340px -->
+              </picture>
+              <h3 class="bike-types__name">
+                Дорожный велосипед
+              </h3>
+            </a>
+          </li>
+          <li class="bike-types__item">
+            <a class="bike-types__link" href="#" aria-label="Смотреть информацию о горных велосипедах">
+              <picture>
+                <source type="image/webp" srcset="img/type-mountain_small.webp 1x, img/type-mountain_small@2x.webp 2x" media="(min-width: 1023px)">
+                <source type="image/webp" srcset="img/type-mountain_large.webp 1x, img/type-mountain_large@2x.webp 2x">
+                <source media="(max-width: 1023px)" srcset="img/type-mountain_small.jpg 1x, img/type-mountain_small@2x.jpg 2x">
+                <img class="bike-types__img" src="img/type-mountain_large.jpg" srcset="img/type-mountain_large.jpg 2x" width="342" height="566" alt="Велосипед на фоне гор">
+              </picture>
+              <h3 class="bike-types__name">
+                Горный велосипед
+              </h3>
+            </a>
+          </li>
+          <li class="bike-types__item">
+            <a class="bike-types__link" href="#" aria-label="Смотреть информацию о детских велосипедах">
+              <picture>
+                <source type="image/webp" srcset="img/type-child_small.webp 1x, img/type-child_small@2x.webp 2x" media="(max-width: 1023px)">
+                <source type="image/webp" srcset="img/type-child_large.webp 1x, img/type-child_large@2x.webp 2x">
+                <source media="(max-width: 1023px)" srcset="img/type-child_small.jpg 1x, img/type-child_small@2x.jpg 2x">
+                <img class="bike-types__img" src="img/type-child_large.jpg" srcset="img/type-child_large.jpg 2x" width="342" height="566" alt="Детский велосипед розовый с белым">
+              </picture>
+              <h3 class="bike-types__name">
+                Детский велосипед
+              </h3>
+            </a>
+          </li>
+        </ul>
+      </div>
     </section>
 
     <section class="bike-video" id="video">
@@ -181,72 +176,70 @@
               <use xlink:href="img/sprite_auto.svg#icon-play"></use>
             </svg>
           </button>
-        <picture>
-          <!--<source type="image/webp" srcset="img/video-img_small.webp 1x, img/video-img_small@2x.webp 2x"
-                          media="(min-width: 767px)">
-                        <source type="image/web p" srcset="img/video-img_medium.webp 1x, img/video-img_medium@2x.webp 2x"
-                          media="(max-width: 1023px)">
-                        <source type="image/webp" srcset="img/video-img_large.webp 1x, img/video-img_large@2x.webp 2x">-->
-          <source media="(max-width: 767px)" srcset="img/video-img_small.jpg 1x, img/video-img_small@2x.jpg 2x">
-          <source media="(max-width: 1023px)" srcset="img/video-img_medium.jpg 1x, img/video-img_medium@2x.jpg 2x">
-        <img class="bike-video__img" src="./img/video-img_large.jpg" srcset="./img/video-img_large@2x.jpg 2x" width="930" height="522" alt="Заставка с чёрным велосипедом">
-        </picture>
+          <picture>
+            <source type="image/webp" srcset="img/video-img_small.webp 1x, img/video-img_small@2x.webp 2x" media="(min-width: 767px)">
+            <source type="image/webp" srcset="img/video-img_medium.webp 1x, img/video-img_medium@2x.webp 2x" media="(max-width: 1023px)">
+            <source type="image/webp" srcset="img/video-img_large.webp 1x, img/video-img_large@2x.webp 2x">
+            <source media="(max-width: 767px)" srcset="img/video-img_small.jpg 1x, img/video-img_small@2x.jpg 2x">
+            <source media="(max-width: 1023px)" srcset="img/video-img_medium.jpg 1x, img/video-img_medium@2x.jpg 2x">
+            <img class="bike-video__img" src="./img/video-img_large.jpg" srcset="./img/video-img_large@2x.jpg 2x" width="930" height="522" alt="Заставка с чёрным велосипедом">
+          </picture>
         </div>
       </div>
     </section>
   </main>
-  <footer class="page-footer " id="contacts">
-    <section class="page-footer__contacts container">
-      <div class="contacts ">
-        <div class="contacts__location ">
-          <h2 class="contacts__title">Как нас найти?</h2>
-          <address class="contacts__address">
+  <footer class="page-footer" id="contacts">
+    <section class="page-footer__location location">
+      <div class="container">
+        <div class="location__wrapper">
+          <h2 class="location__title">Как нас найти?</h2>
+          <address class="location__address">
             Мы находимся по&nbsp;адресу: Санкт-Петербург, ул.&nbsp;Большая Конюшенная,&nbsp;д.&nbsp;19
           </address>
         </div>
+      </div>
+    </section>
+    <section class="page-footer__map map">
+      <div class="page-footer__map-wrapper">
+        <h2 class="visually-hidden">Карта</h2>
+        <div class="map__image">
 
-        <div class="contacts__map map">
-          <h2 class="visually-hidden">Карта</h2>
-          <div class="map__image">
-            <iframe class="map__goole-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424124016!2d30.320894616199674!3d59.93879686904786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1634597737090!5m2!1sru!2sru" width="957" height="530" style="border: 0;" allowfullscreen="" loading="lazy">
-            </iframe>
-            <picture>
-              <!--<source type="image/webp" srcset="img/map_small.webp 1x, img/map_small@2x.webp 2x"
-                media="(min-width: 767px)">
-              <source type="image/web p" srcset="img/map_medium.webp 1x, img/map_medium@2x.webp 2x"
-                media="(max-width: 1023px)">
-              <source type="image/webp" srcset="img/map_large.webp 1x, img/map_large@2x.webp 2x">-->
-              <source media="(max-width: 767px)" srcset="img/map_small.png 1x, img/map_small@2x.png 2x">
-              <source media="(max-width: 1023px)" srcset="img/map_medium.png 1x, img/map_medium@2x.png 2x">
-              <img class="map__image-png" src="img/map_large.png" srcset="img/map_large@2x.png 2x" width="957" height="530" alt="ул. Большая Конюшенная, д. 19 Санкт-Петербург">
-            </picture>
-          </div>
-        </div>
-
-        <div class="contacts__online">
-          <ul class="contacts__list">
-            <li class="contacts__item">
-              <a class="contacts__link" href="email:puteshestviemechta@gmail.ru">
-                <svg class="contacts__icon" width="17" height="24" viewBox="0 0 17 24" xmlns="http://www.w3.org/2000/svg">
-                  <use xlink:href="img/sprite_auto.svg#icon-email"></use>
-                </svg>
-                puteshestviemechta@gmail.ru
-              </a>
-            </li>
-            <li class="contacts__item">
-              <a class="contacts__link" href="tel:+749978468446">
-                <svg class="contacts__icon contacts__icon--phone" width="17" height="24" viewBox="0 0 17 24" xmlns="http://www.w3.org/2000/svg">
-                  <use xlink:href="img/sprite_auto.svg#icon-phone"></use>
-                </svg>
-                +7&nbsp;(499)&nbsp;-784-684-46
-              </a>
-            </li>
-          </ul>
+          <picture>
+            <source type="image/webp" srcset="img/map_small.webp 1x, img/map_small@2x.webp 2x" media="(min-width: 767px)">
+            <source type="image/webp" srcset="img/map_medium.webp 1x, img/map_medium@2x.webp 2x" media="(max-width: 1023px)">
+            <source type="image/webp" srcset="img/map_large.webp 1x, img/map_large@2x.webp 2x">
+            <source media="(max-width: 767px)" srcset="img/map_small.png 1x, img/map_small@2x.png 2x">
+            <source media="(max-width: 1023px)" srcset="img/map_medium.png 1x, img/map_medium@2x.png 2x">
+            <img class="map__image" src="img/map_large.png" srcset="img/map_large@2x.png 2x" width="957" height="530" alt="ул. Большая Конюшенная, д. 19 Санкт-Петербург">
+          </picture>
         </div>
       </div>
     </section>
+    <section class="contacts">
+      <div class="container">
+        <h2 class="visually-hidden">Контакты</h2>
+        <ul class="contacts__list">
+          <li class="contacts__item">
+            <a class="contacts__link" href="email:puteshestviemechta@gmail.ru">
+              <svg class="contacts__icon" width="17" height="24" viewBox="0 0 17 24" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="img/sprite_auto.svg#icon-email"></use>
+              </svg>
+              puteshestviemechta@gmail.ru
+            </a>
+          </li>
+          <li class="contacts__item">
+            <a class="contacts__link" href="tel:+749978468446">
+              <svg class="contacts__icon contacts__icon--phone" width="17" height="24" viewBox="0 0 17 24" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="img/sprite_auto.svg#icon-phone"></use>
+              </svg>
+              +7&nbsp;(499)&nbsp;-784-684-46
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
   </footer>
-  <script src="js/script.js"></script>
+  <script src="js/script.min.js"></script>
 </body>
 
 </html>

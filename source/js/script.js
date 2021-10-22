@@ -4,14 +4,16 @@ const body = document.querySelector('.page__body');
 const navMain = body.querySelector('.nav');
 const navToggle = body.querySelector('.nav__toggle');
 const navLinks = body.querySelectorAll('.nav__link');
+const headerMain = body.querySelector('.page-header__main')
 const pageMain = body.querySelector('.page-main');
 const pageFooter = body.querySelector('.page-footer');
-const headerMain = body.querySelector('.page-header__main');
+const header = body.querySelector('.page-header');
 const userName = document.querySelector('[name=username]');
 const eMail = document.querySelector('[name=email]');
 
 
 navMain.classList.remove('nav--nojs');
+header.classList.remove('page-header--nojs');
 
 let isStorageSupport = true;
 let storageName = '';

@@ -1,8 +1,9 @@
 .nav {
+  position: relative;
+
   @include display-flex-wrap;
   justify-content: center;
-  position: relative;
-  margin: 0 140px;
+
 
   @media (max-width: $medium-width) {
     position: absolute;
@@ -17,7 +18,7 @@
   @include display-flex-wrap;
   justify-content: space-between;
   width: 100%;
-  min-height: 62px;
+  height: min-content;
   border-bottom: 1px solid $basic-white-opacity02;
 
   @media (max-width: $medium-width) {
@@ -42,6 +43,7 @@
 }
 
 .nav__link {
+  padding: 20px 18px 10px;
   font-weight: 300;
   text-align: center;
   text-decoration: none;
@@ -110,6 +112,7 @@
     }
 
     &--nojs {
+      position: relative;
       width: 100%;
       min-height: 568px;
 

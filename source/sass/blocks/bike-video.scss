@@ -45,7 +45,7 @@
 
 .bike-video__desc {
   width: 26%;
-  margin: 0 auto 55px;
+  margin: 0 auto 30px;
   text-align: center;
   font-weight: 300;
   line-height: 28px;
@@ -53,7 +53,7 @@
 
   @media (max-width: $medium-width) {
     width: 60%;
-    margin-bottom: 40px;
+    margin-bottom: 42px;
   }
 
   @media (max-width: $small-width) {
@@ -64,21 +64,22 @@
 
 .bike-video__img-wrapper {
   position: relative;
-  padding: 0 254px;
+  margin: 0 auto;
+  width: 80%;
 
   @media (max-width: $medium-width) {
-    padding: 0 112px;
+    width: 70%;
   }
 
   @media (max-width: $small-width) {
-    padding: 0 16px;
+    width: 100%;
   }
 }
 
 .bike-video__toggle {
   position: absolute;
-  top: 44%;
-  left: 48%;
+  top: 230px;
+  left: 47%;
   width: 65px;
   height: 65px;
   cursor: pointer;
@@ -89,8 +90,8 @@
   @media (max-width: $medium-width) {
     width: 90px;
     height: 90px;
-    top: 34%;
-    left: 44%;
+    top: 96px;
+    left: 41%;
   }
 
   @media (max-width: $small-width) {

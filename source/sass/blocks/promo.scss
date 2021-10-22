@@ -1,38 +1,37 @@
 .promo__wrapper {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 21%;
-  grid-template-rows: min(766px);
-  margin: 0;
-  padding: 0 12%;
-  box-sizing: border-box;
-  overflow: visible;
+  grid-template-columns: 46% 37%;
+  gap: 17%;
+  grid-template-rows: min(750px);
+  width: 77%;
+  margin: 0 auto;
 
   @media (max-width: $medium-width) {
-    grid-template-columns: 1fr;
-    grid-template-rows: 284px auto;
-    padding: 0 20%;
+    grid-template-columns: 100%;
+    grid-template-rows: 287px auto;
     gap: 70px;
+    width: 60%;
   }
 
   @media (max-width: $small-width) {
-    grid-template-rows: 334px auto;
+    grid-template-rows: 340px auto;
     gap: 72px;
+    width: 100%;
     padding: 0;
   }
 }
 
 .promo__content {
-  padding-top: 304px;
-  overflow: visible;
+  padding-top: 295px;
 
   @media (max-width: $medium-width) {
     width: 100%;
-    padding-top: 80px;
+    padding-top: 86px;
+    overflow-y: auto;
   }
 
   @media (max-width: $small-width) {
-    padding-top: 64px;
+    padding-top: 70px;
   }
 }
 
@@ -75,16 +74,13 @@
 .promo__form {
   width: 100%;
   align-self: center;
-  padding: 20px 0 0 20px;
-  box-sizing: border-box;
 
   @media (max-width: $medium-width) {
-    width: 100%;
-    padding: 0 58px;
+    width: 74%;
+    margin: 0 auto;
   }
 
   @media (max-width: $small-width) {
-    min-height: 286px;
-    padding: 0;
+    width: 100%;
   }
 }
