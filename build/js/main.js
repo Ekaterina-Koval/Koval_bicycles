@@ -3,7 +3,7 @@
 const body = document.querySelector('.page__body');
 const navMain = body.querySelector('.nav');
 const navToggle = body.querySelector('.nav__toggle');
-const navLinks = body.querySelectorAll('.nav__link');
+const navLinks = body.querySelectorAll('.nav a');
 const headerMain = body.querySelector('.page-header__main');
 const pageMain = body.querySelector('.page-main');
 const pageFooter = body.querySelector('.page-footer');

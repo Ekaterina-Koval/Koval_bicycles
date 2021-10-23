@@ -95,7 +95,7 @@
         background-color: $accent-main;
       }
 
-      .nav__list {
+      ul {
         display: none;
       }
     }
@@ -116,7 +116,7 @@
       width: 100%;
       min-height: 568px;
 
-      .nav__list {
+      .nav ul {
         display: block;
         position: absolute;
       }
