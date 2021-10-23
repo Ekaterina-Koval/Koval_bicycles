@@ -12,6 +12,7 @@ const form = body.querySelector('.form');
 const userName = document.querySelector('#user-name');
 const userPhone = document.querySelector('#user-phone');
 
+
 navMain.classList.remove('nav--nojs');
 header.classList.remove('page-header--nojs');
 
@@ -64,4 +65,16 @@ const navSvitches = () => {
 navToggle.addEventListener('click', navSvitches);
 navLinks.forEach(link => {
   link.addEventListener('click', navSvitches);
+});
+
+userPhone.addEventListener('input', () => {
+  const userPhoneValue = userPhone.value;
+  if (!userPhoneValue) {
+    userPhone.setCustomValidity('Обязательное поле!');
+  } else if (isNaN(userPhoneValue)) {
+    userPhone.setCustomValidity(`Неоходимо ввести цифры!`);
+  } else {
+    userPhone.setCustomValidity('');
+  }
+  userPhone.reportValidity();
 });
