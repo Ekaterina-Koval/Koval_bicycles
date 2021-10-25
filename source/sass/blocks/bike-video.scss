@@ -77,6 +77,14 @@
   border-radius: 50%;
   background-color: $accent-main;
 
+  &:hover {
+    border: 4px solid $basic-black-opacity05;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+
   @media (max-width: $medium-width) {
     width: 90px;
     height: 90px;

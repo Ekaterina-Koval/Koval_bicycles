@@ -50,6 +50,14 @@
   text-decoration: none;
   color: $basic-white-opacity07;
 
+  &:hover {
+    color: $accent-main;
+  }
+
+  &:active {
+    color: $basic-black-opacity07;
+  }
+
   @media (max-width: $medium-width) {
     font-weight: 400;
     font-size: 20px;

@@ -38,6 +38,14 @@
   text-align: right;
   color: $basic-black-opacity05;
 
+  &:hover {
+     color: $accent-main;
+  }
+
+  &:active {
+    opacity: 0.2;
+  }
+
   @media (max-width: $small-width) {
     justify-content: center;
     text-align: center;
