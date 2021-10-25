@@ -129,6 +129,7 @@
 
   @media (max-width: $medium-width) {
     height: 282px;
+
     .no-webp & {
       background-image: url("../img/video-img_medium.jpg");
 
@@ -148,6 +149,7 @@
 
   @media (max-width: $small-width) {
     height: 161px;
+
     .no-webp & {
       background-image: url("../img/video-img_small.jpg");
 

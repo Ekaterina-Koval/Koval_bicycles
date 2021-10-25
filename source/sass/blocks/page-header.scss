@@ -43,7 +43,7 @@
       background-image: url("../img/promo-back_medium.webp");
 
       @media (min-resolution: 2dppx) {
-        background-image: url("../img/promo-back_medium@2x.webp")
+        background-image: url("../img/promo-back_medium@2x.webp");
       }
     }
 
@@ -55,7 +55,8 @@
 
   @media (max-width: $small-width) {
     min-height: 390px;
-      .no-webp {
+
+    .no-webp {
       background-image: url("../img/promo-back_small.jpg");
 
       @media (min-resolution: 2dppx) {

@@ -167,11 +167,11 @@
   text-decoration: none;
 
   &:hover img {
-     border: 3px solid $accent-main;
+    box-shadow: 0 0 0 3px $accent-main;
   }
 
   &:hover h3 {
-     color: $accent-main;
+    color: $accent-main;
   }
 
   &:active {
