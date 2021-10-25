@@ -1,53 +1,73 @@
 .page-header {
-  background-image:
-    url("../img/promo-back_large.jpg"),
-    linear-gradient($dark-background, $dark-background);
-
-  @media (min-resolution: 2dppx) {
-    background-image:
-      url("../img/promo-back_large@2x.jpg"),
-      linear-gradient($dark-background, $dark-background);
-  }
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-
-  @media (max-width: $medium-width) {
-    background-image: none;
-  }
-
-  &::before {
-    @media (max-width: $medium-width) {
-      content: "";
-      display: block;
-      position: absolute;
-      z-index: -1;
-      width: 100vw;
-      min-height: 340px;
-      background-image:
-        url("../img/promo-back_medium.jpg"),
-        linear-gradient($dark-background, $dark-background);
+  @media (min-width: $large-width-only) {
+    .no-webp & {
+      background-image: url("../img/promo-back_large.jpg");
 
       @media (min-resolution: 2dppx) {
-        background-image:
-          url("../img/promo-back_medium@2x.jpg"),
-          linear-gradient($dark-background, $dark-background);
+        background-image: url("../img/promo-back_large@2x.jpg");
       }
-      background-position: center;
-      background-size: cover;
-      background-repeat: no-repeat;
     }
 
-    @media (max-width: $small-width) {
-      min-height: 390px;
-      background-image:
-        url("../img/promo-back_small.jpg"),
-        linear-gradient($dark-background, $dark-background);
+    .webp & {
+      background-image: url("../img/promo-back_large.webp");
 
       @media (min-resolution: 2dppx) {
-        background-image:
-          url("../img/promo-back_small@2x.jpg"),
-          linear-gradient($dark-background, $dark-background);
+        background-image: url("../img/promo-back_large@2x.webp");
+      }
+    }
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+.page-header::before {
+  @media (max-width: $medium-width) {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: -1;
+    width: 100vw;
+    min-height: 340px;
+
+    .no-webp & {
+      background-image: url("../img/promo-back_medium.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/promo-back_medium@2x.jpg");
+      }
+    }
+
+    .webp & {
+      background-image: url("../img/promo-back_medium.webp");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/promo-back_medium@2x.webp")
+      }
+    }
+
+    background-color: $dark-background;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  @media (max-width: $small-width) {
+    min-height: 390px;
+      .no-webp {
+      background-image: url("../img/promo-back_small.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/promo-back_small@2x.jpg");
+      }
+    }
+
+    .webp {
+      background-image: url("../img/promo-back_small.webp");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/promo-back_small@2x.webp");
       }
     }
   }
