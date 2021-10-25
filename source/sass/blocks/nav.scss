@@ -7,6 +7,8 @@
 
   @media (max-width: $medium-width) {
     position: absolute;
+    height: 100%;
+    overflow-y: auto;
     margin: 0;
     right: 0;
     z-index: 1;
@@ -23,7 +25,6 @@
 
   @media (max-width: $medium-width) {
     flex-direction: column;
-    max-width: 320px;
     padding: 100px 0;
     background-color: $basic-white;
     border-bottom: none;
