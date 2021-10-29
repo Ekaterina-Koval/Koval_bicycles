@@ -1,7 +1,6 @@
 .location {
   @include display-flex-wrap;
   flex-direction: column;
-  width: 100%;
 }
 
 .location__wrapper {
@@ -28,8 +27,8 @@
 
 
 .location address {
-  width: 80%;
-  margin: 0 auto 40px;
+  width: 50%;
+  margin: 0 auto 10px;
   font-size: 17px;
   line-height: 31px;
   font-style: normal;

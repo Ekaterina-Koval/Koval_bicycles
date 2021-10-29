@@ -15,6 +15,7 @@ const userPhone = document.querySelector('#user-phone');
 
 navMain.classList.remove('nav--nojs');
 header.classList.remove('page-header--nojs');
+navMain.classList.add('nav--opened');
 
 let isStorageSupport = true;
 let storageName = '';
@@ -69,10 +70,11 @@ navLinks.forEach(link => {
 
 userPhone.addEventListener('input', () => {
   const userPhoneValue = userPhone.value;
+  let mask = /^(\+7|7|8)?[\s\-]?\(?[489][0-9]{2}\)?[\s\-]?[0-9]{3}[\s\-]?[0-9]{2}[\s\-]?[0-9]{2}$/;
   if (!userPhoneValue) {
     userPhone.setCustomValidity('Обязательное поле!');
-  } else if (isNaN(userPhoneValue)) {
-    userPhone.setCustomValidity(`Неоходимо ввести цифры!`);
+  } else if (!mask.test(userPhoneValue)) {
+    userPhone.setCustomValidity(`Введите корректный номер телефона!`);
   } else {
     userPhone.setCustomValidity('');
   }

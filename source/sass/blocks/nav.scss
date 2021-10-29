@@ -1,5 +1,5 @@
 .nav {
-  position: relative;
+  width: 100%;
   max-width: 873px;
   padding-top: 10px;
 
@@ -8,7 +8,9 @@
 
   @media (max-width: $medium-width) {
     position: absolute;
-    height: 100%;
+    max-width: 100%;
+    height: 100vw;
+    padding-top: 0;
     overflow-y: auto;
     margin: 0;
     right: 0;
@@ -26,6 +28,7 @@
 
   @media (max-width: $medium-width) {
     flex-direction: column;
+    height: 100%;
     padding: 100px 0;
     background-color: $basic-white;
     border-bottom: none;
@@ -35,11 +38,9 @@
 .nav li {
   padding: 10px 20px;
 
-  &:not(:last-child) {
-    margin-right: 10.8%;
-
-    @media (max-width: 1098px) {
-      margin-right: 9%;
+  @media (min-width: $large-width-only) {
+    &:not(:last-child) {
+      margin-right: auto;
     }
   }
 
@@ -102,46 +103,46 @@
 }
 
 @media (max-width: $medium-width) {
-  .nav {
-    &--opened {
-      .nav__toggle {
-        right: 0;
-        background-image: url("../img/icon-nav-opened.svg");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: 30px 30px;
-        background-color: $accent-main;
-      }
-
-      ul {
-        display: none;
-      }
+  .nav--opened {
+    .nav__toggle {
+      right: 0;
+      background-image: url("../img/icon-nav-opened.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 30px 30px;
+      background-color: $accent-main;
     }
 
-    &--closed {
-      .nav__toggle {
-        right: 0;
-        background-color: $basic-white;
-        background-image: url("../img/icon-nav-closed.svg");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: 30px 30px;
-      }
+    ul {
+      display: none;
+    }
+  }
+
+  .nav--closed {
+    .nav__toggle {
+      right: 0;
+      background-color: $basic-white;
+      background-image: url("../img/icon-nav-closed.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 30px 30px;
+    }
+  }
+
+  .nav--nojs {
+    position: relative;
+    width: 100%;
+    height: 568px;
+    padding: 0;
+
+    ul {
+      display: block;
+      position: absolute;
+      height: 368px;
     }
 
-    &--nojs {
-      position: relative;
-      width: 100%;
-      min-height: 568px;
-
-      .nav ul {
-        display: block;
-        position: absolute;
-      }
-
-      .nav__toggle {
-        display: none;
-      }
+    .nav__toggle {
+      display: none;
     }
   }
 }

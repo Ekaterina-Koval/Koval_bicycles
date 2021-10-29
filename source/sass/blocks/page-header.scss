@@ -1,5 +1,13 @@
 .page-header {
   @media (min-width: $large-width-only) {
+    &--nojs {
+      background-image: url("../img/promo-back_large.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/promo-back_large@2x.jpg");
+      }
+    }
+
     .no-webp & {
       background-image: url("../img/promo-back_large.jpg");
 
@@ -75,8 +83,26 @@
   }
 }
 
+
+@media (max-width: $medium-width) {
 .page-header--nojs::before {
-  @media (max-width: $medium-width) {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: -1;
+    width: 100vw;
+    min-height: 340px;
     top: 568px;
+    background-image: url("../img/promo-back_medium.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/promo-back_medium@2x.jpg");
+    }
+
+    background-color: $dark-background;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 }
+
