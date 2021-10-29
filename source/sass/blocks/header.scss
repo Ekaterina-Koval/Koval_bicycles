@@ -1,7 +1,9 @@
 .header {
+  position: relative;
+
   @include display-flex-wrap;
   justify-content: center;
-  min-height: 75px;
+  min-height: 85px;
 
   @media (max-width: $medium-width) {
     justify-content: flex-start;
@@ -11,8 +13,8 @@
 
 .header__logo {
   position: absolute;
-  top: 316px;
-  left: 19.5%;
+  top: 317px;
+  left: 19.4%;
 
   @media (max-width: $medium-width) {
     top: 25px;
@@ -22,9 +24,5 @@
 }
 
 .header__nav {
-  width: 77%;
-
-  @media (max-width: $medium-width) {
-    width: 100%;
-  }
+  width: 100%;
 }

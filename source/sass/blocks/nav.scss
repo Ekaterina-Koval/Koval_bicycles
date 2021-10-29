@@ -1,9 +1,10 @@
 .nav {
   position: relative;
+  max-width: 873px;
+  padding-top: 10px;
 
   @include display-flex-wrap;
   justify-content: center;
-
 
   @media (max-width: $medium-width) {
     position: absolute;
@@ -18,7 +19,7 @@
 .nav ul {
   @include reset-list;
   @include display-flex-wrap;
-  justify-content: space-between;
+  justify-content: center;
   width: 100%;
   height: min-content;
   border-bottom: 1px solid $basic-white-opacity02;
@@ -32,7 +33,15 @@
 }
 
 .nav li {
-  padding: 20px 18px 10px;
+  padding: 10px 20px;
+
+  &:not(:last-child) {
+    margin-right: 10.8%;
+
+    @media (max-width: 1098px) {
+      margin-right: 9%;
+    }
+  }
 
   @media (max-width: $medium-width) {
     position: relative;
@@ -44,10 +53,10 @@
 }
 
 .nav a {
-  padding: 20px 18px 10px;
   font-weight: 300;
   text-align: center;
   text-decoration: none;
+  letter-spacing: 0.005em;
   color: $basic-white-opacity07;
 
   &:hover {

@@ -37,6 +37,10 @@
 
   @media (max-width: $medium-width) {
     width: 100%;
-    margin-bottom: 22px;
+    margin-bottom: 18px;
+  }
+
+  @media (max-width: $small-width) {
+    width: 87%;
   }
 }

@@ -9,7 +9,7 @@
     background-size: 100% 413px;
   }
 
-  @media (max-width: $medium-width) {
+  @media (max-width: $small-width) {
     background-size: 100% 384px;
   }
 }
@@ -18,7 +18,7 @@
   margin: 0 auto;
   width: 80%;
   padding-top: 120px;
-  padding-bottom: 156px;
+  padding-bottom: 152px;
 
   @media (max-width: $medium-width) {
     width: 70%;
@@ -48,15 +48,16 @@
 }
 
 .bike-video p {
-  width: 26%;
-  margin: 0 auto 30px;
+  width: 28%;
+  margin: 0 auto 56px;
   text-align: center;
   font-weight: 300;
   line-height: 28px;
+  letter-spacing: 0.002em;
   color: $basic-white-opacity07;
 
   @media (max-width: $medium-width) {
-    width: 60%;
+    width: 80%;
     margin-bottom: 42px;
   }
 
@@ -68,8 +69,8 @@
 
 .bike-video__toggle {
   position: absolute;
-  top: 230px;
-  left: 47%;
+  bottom: 228px;
+  left: 46.6%;
   width: 65px;
   height: 65px;
   cursor: pointer;
@@ -103,69 +104,25 @@
 .bike-video__box {
   position: relative;
   display: block;
-  width: 100%;
-  height: 522px;
-
-  .no-webp & {
-    background-image: url("../img/video-img_large.jpg");
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/promo-back_small@2x.jpg");
-    }
-  }
-
-  .webp & {
-    background-image: url("../img/video-img_large.webp");
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/promo-back_small@2x.webp");
-    }
-  }
-
+  margin: 0 auto;
+  width: 80.5%;
   background-color: $dark-background;
-  background-size: cover;
-  background-repeat: no-repeat;
-
 
   @media (max-width: $medium-width) {
-    height: 282px;
-
-    .no-webp & {
-      background-image: url("../img/video-img_medium.jpg");
-
-      @media (min-resolution: 2dppx) {
-        background-image: url("../img/promo-back_medium@2x.jpg");
-      }
-    }
-
-    .webp & {
-      background-image: url("../img/video-img_medium.webp");
-
-      @media (min-resolution: 2dppx) {
-        background-image: url("../img/promo-back_medium@2x.webp");
-      }
-    }
+    width: 94%;
   }
 
   @media (max-width: $small-width) {
+    width: 100%;
     height: 161px;
-
-    .no-webp & {
-      background-image: url("../img/video-img_small.jpg");
-
-      @media (min-resolution: 2dppx) {
-        background-image: url("../img/promo-back_small@2x.jpg");
-      }
-    }
-
-    .webp & {
-      background-image: url("../img/video-img_small.webp");
-
-      @media (min-resolution: 2dppx) {
-        background-image: url("../img/promo-back_small@2x.webp");
-      }
-    }
   }
+}
+
+.bike-video img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
 }
 
 .bike-video__icon {

@@ -21,7 +21,7 @@
     <h1 class="visually-hidden">Магазин велосипедов Moon</h1>
     <div class="page-header__header header container">
       <div class="header__logo">
-        <a href="" aria-label="Ссылка на главную страницу">
+        <a aria-label="Ссылка на главную страницу">
           <img src="img/logo.svg" width="68" height="21" alt="Логотип магазина велосипедов Moon">
         </a>
       </div>
@@ -126,13 +126,13 @@
             <a href="#" aria-label="Смотреть информацию о дорожных велосипедах">
               <picture>
                 <source type="image/webp" srcset="img/type-road_small.webp 1x, img/type-road_small@2x.webp 2x"
-                  media="(min-width: 1023px)">
+                  media="(max-width: 1023px)">
                 <source type="image/webp" srcset="img/type-road_large.webp 1x, img/type-road_large@2x.webp 2x">
                 <!--img size (max-width 1023px): 1x-270px, 2x-540px -->
                 <source media="(max-width: 1023px)" srcset="img/type-road_small.jpg 1x, img/type-road_small@2x.jpg 2x">
                 <!--img size (min-width 1024px): 1x-342px, 2x-684px-->
                 <img src="img/type-road_large.jpg" srcset="img/type-road_large.jpg 2x"
-                  width="342" height="566" alt="Дорожный велосипед с корзиной">
+                  width="342" height="503" alt="Дорожный велосипед с корзиной">
               </picture>
               <h3>
                 Дорожный велосипед
@@ -143,7 +143,7 @@
             <a href="#" aria-label="Смотреть информацию о горных велосипедах">
               <picture>
                 <source type="image/webp" srcset="img/type-mountain_small.webp 1x, img/type-mountain_small@2x.webp 2x"
-                  media="(min-width: 1023px)">
+                  media="(max-width: 1023px)">
                 <source type="image/webp" srcset="img/type-mountain_large.webp 1x, img/type-mountain_large@2x.webp 2x">
                 <!--img size (max-width 1023px): 1x-270px, 2x-540px -->
                 <source media="(max-width: 1023px)"
@@ -168,7 +168,7 @@
                   srcset="img/type-child_small.jpg 1x, img/type-child_small@2x.jpg 2x">
                 <!--img size (min-width 1024px): 1x-342px, 2x-684px-->
                 <img src="img/type-child_large.jpg" srcset="img/type-child_large.jpg 2x"
-                  width="342" height="566" alt="Детский велосипед розовый с белым">
+                  width="342" height="512" alt="Детский велосипед розовый с белым">
               </picture>
               <h3>
                 Детский велосипед
@@ -194,6 +194,17 @@
               <use xlink:href="img/sprite_auto.svg#icon-play"></use>
             </svg>
           </button>
+          <picture>
+            <source type="image/webp" srcset="img/video-img_small.webp 1x, img/video-img_small@2x.webp 2x"
+              media="(min-width: 767px)">
+            <source type="image/webp" srcset="img/video-img_medium.webp 1x, img/video-img_medium@2x.webp 2x"
+              media="(max-width: 1023px)">
+            <source type="image/webp" srcset="img/video-img_large.webp 1x, img/video-img_large@2x.webp 2x">
+            <source media="(max-width: 767px)" srcset="img/video-img_small.jpg 1x, img/video-img_small@2x.jpg 2x">
+            <source media="(max-width: 1023px)" srcset="img/video-img_medium.jpg 1x, img/video-img_medium@2x.jpg 2x">
+            <img src="./img/video-img_large.jpg" srcset="./img/video-img_large@2x.jpg 2x" width="930"
+              height="522" alt="Заставка с чёрным велосипедом">
+          </picture>
         </div>
       </div>
     </section>
@@ -210,7 +221,7 @@
       </div>
     </section>
     <section class="page-footer__map map">
-      <div class="page-footer__map-wrapper">
+      <div class="map__wrapper">
         <h2 class="visually-hidden">Карта</h2>
         <div class="map__image">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424124016!2d30.320894616199674!3d59.93879686904786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1634597737090!5m2!1sru!2sru"

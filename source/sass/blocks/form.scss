@@ -5,7 +5,7 @@
 }
 
 .form legend {
-  margin-bottom: 16px;
+  margin-bottom: 19px;
   padding: 0;
   text-align: center;
   font-weight: 600;
@@ -29,7 +29,7 @@
 }
 
 .form li {
-  margin-bottom: 20px;
+  margin-bottom: 18px;
   padding: 8px 29px;
   width: 100%;
   min-height: min-content;
@@ -43,7 +43,7 @@
   }
 
   @media (max-width: $medium-width) {
-    padding: 7px 21px;
+    padding: 8px 21px;
   }
 }
 
@@ -70,6 +70,7 @@
     line-height: 21px;
     border: none;
     border-radius: 6px;
+    cursor: pointer;
 
     &:hover {
       font-size: 17px;

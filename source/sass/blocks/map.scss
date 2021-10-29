@@ -1,14 +1,28 @@
+.map__wrapper {
+  max-width: 957px;
+  padding: 0 17%;
+  margin: 0 auto;
+
+  @media (max-width: $medium-width) {
+    padding: 0 35px;
+  }
+
+  @media (max-width: $small-width) {
+    padding: 0;
+  }
+}
+
 .map__image {
   position: relative;
   width: 100%;
   height: 530px;
 
   @media (max-width: $medium-width) {
-    height: 413px;
+    height: 545px;
   }
 
   @media (max-width: $small-width) {
-    height: 384px;
+    height: 250px;
   }
 }
 

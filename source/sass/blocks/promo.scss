@@ -1,15 +1,16 @@
 .promo__wrapper {
   display: grid;
-  grid-template-columns: 46% 37%;
-  gap: 17%;
-  grid-template-rows: min(750px);
-  width: 77%;
+  grid-template-columns: 46% 37.4%;
+  gap: 16.9%;
+  grid-template-rows: min(740px);
+  width: 100%;
+  max-width: 875px;
   margin: 0 auto;
 
   @media (max-width: $medium-width) {
     grid-template-columns: 100%;
     grid-template-rows: 287px auto;
-    gap: 70px;
+    gap: 72px;
     width: 60%;
   }
 
@@ -22,7 +23,7 @@
 }
 
 .promo__content {
-  padding-top: 295px;
+  padding-top: 285px;
 
   @media (max-width: $medium-width) {
     width: 100%;
@@ -36,13 +37,15 @@
 }
 
 .promo__content h2 {
-  margin: 0 0 20px;
+  margin: 0 0 24px;
   font-weight: 700;
   font-size: 46px;
   line-height: 64px;
+  letter-spacing: 0.02em;
   color: $basic-white;
 
   @media (max-width: $medium-width) {
+    margin-bottom: 18px;
     font-size: 30px;
     line-height: 42px;
     text-align: center;
@@ -58,6 +61,7 @@
   font-weight: 300;
   font-size: 20px;
   line-height: 32px;
+  letter-spacing: 0.001em;
   color: $basic-white-opacity08;
 
   @media (max-width: $medium-width) {
