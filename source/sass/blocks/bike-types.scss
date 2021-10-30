@@ -94,10 +94,13 @@
     @media (max-width: $medium-width) {
       left: -37px;
       top: 200px;
-      z-index: -1;
       width: 127px;
       height: 127px;
       border: 18px solid $accent-main;
+    }
+
+    @media (max-width: $small-width) {
+      left: -24px;
     }
   }
 }
@@ -148,6 +151,10 @@
       width: 68px;
       height: 68px;
       border: 13px solid $accent-main;
+    }
+
+    @media (max-width: $small-width) {
+      right: -14px;
     }
   }
 }

@@ -9,12 +9,12 @@
   @media (max-width: $medium-width) {
     position: absolute;
     max-width: 100%;
-    height: 100vw;
+    height: 100vh;
     padding-top: 0;
     overflow-y: auto;
     margin: 0;
     right: 0;
-    z-index: 1;
+    z-index: 3;
   }
 }
 
@@ -60,15 +60,10 @@
   letter-spacing: 0.005em;
   color: $basic-white-opacity07;
 
-  &:hover {
-    color: $accent-main;
-  }
-
-  &:active {
-    color: $basic-black-opacity07;
-  }
-
   @media (max-width: $medium-width) {
+    display: block;
+    width: 100%;
+    text-align: left;
     font-weight: 400;
     font-size: 20px;
     line-height: 28px;
@@ -84,6 +79,24 @@
       height: 12px;
       background-image: url("../img/icon-arrowlink.svg");
       background-repeat: no-repeat;
+    }
+  }
+
+  &:hover {
+    color: $accent-main;
+
+    &::before {
+      width: 12px;
+      height: 18px;
+      background-size: 12px 18px;
+    }
+  }
+
+  &:active {
+    opacity: 0.2;
+
+    &::before {
+      opacity: 0.2;
     }
   }
 }

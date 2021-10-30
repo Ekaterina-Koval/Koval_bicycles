@@ -75,7 +75,7 @@
   position: absolute;
   vertical-align: auto;
   top: 2px;
-  left: 42px;
+  left: 16.5%;
   width: 100px;
   height: 60px;
   font-weight: 700;
@@ -85,6 +85,6 @@
   text-align: right;
 
   @media (max-width: $small-width) {
-    left: 62px;
+    left: 22%;
   }
 }

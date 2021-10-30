@@ -70,10 +70,10 @@ navLinks.forEach(link => {
 
 userPhone.addEventListener('input', () => {
   const userPhoneValue = userPhone.value;
-  let mask = /^(\+7|7|8)?[\s\-]?\(?[489][0-9]{2}\)?[\s\-]?[0-9]{3}[\s\-]?[0-9]{2}[\s\-]?[0-9]{2}$/;
+  let regex = /^\+?[\d()\- ]+$/;
   if (!userPhoneValue) {
     userPhone.setCustomValidity('Обязательное поле!');
-  } else if (!mask.test(userPhoneValue)) {
+  } else if (!regex.test(userPhoneValue)) {
     userPhone.setCustomValidity(`Введите корректный номер телефона!`);
   } else {
     userPhone.setCustomValidity('');
