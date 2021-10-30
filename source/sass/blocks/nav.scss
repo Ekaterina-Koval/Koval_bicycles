@@ -1,4 +1,5 @@
 .nav {
+  position: relative;
   width: 100%;
   max-width: 873px;
   padding-top: 10px;
@@ -14,7 +15,7 @@
     overflow-y: auto;
     margin: 0;
     right: 0;
-    z-index: 3;
+    z-index: 1;
   }
 }
 
@@ -53,7 +54,7 @@
   }
 }
 
-.nav a {
+.nav__link {
   font-weight: 300;
   text-align: center;
   text-decoration: none;
