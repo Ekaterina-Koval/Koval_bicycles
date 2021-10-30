@@ -73,37 +73,36 @@
   }
 
   &:nth-child(3n+1) {
-
-  @media (min-width: $large-width-only) {
-    padding-top: 10px;
-  }
-
-  &::before {
-    content: "";
-    display: block;
-    position: absolute;
-    left: -60px;
-    top: 166px;
-    z-index: -1;
-    width: 180px;
-    height: 180px;
-    border: 27px solid $accent-main;
-    border-radius: 50%;
-    box-sizing: border-box;
-
-    @media (max-width: $medium-width) {
-      left: -37px;
-      top: 200px;
-      width: 127px;
-      height: 127px;
-      border: 18px solid $accent-main;
+    @media (min-width: $large-width-only) {
+      padding-top: 10px;
     }
 
-    @media (max-width: $small-width) {
-      left: -24px;
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      left: -60px;
+      top: 166px;
+      z-index: -1;
+      width: 180px;
+      height: 180px;
+      border: 27px solid $accent-main;
+      border-radius: 50%;
+      box-sizing: border-box;
+
+      @media (max-width: $medium-width) {
+        left: -37px;
+        top: 200px;
+        width: 127px;
+        height: 127px;
+        border: 18px solid $accent-main;
+      }
+
+      @media (max-width: $small-width) {
+        left: -24px;
+      }
     }
   }
-}
 
   @media (min-width: $large-width-only) {
     &:nth-child(3n+2)::before,

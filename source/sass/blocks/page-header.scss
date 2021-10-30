@@ -85,7 +85,7 @@
 
 
 @media (max-width: $medium-width) {
-.page-header--nojs::before {
+  .page-header--nojs::before {
     content: "";
     display: block;
     position: absolute;
@@ -105,4 +105,3 @@
     background-repeat: no-repeat;
   }
 }
-
