@@ -60,32 +60,32 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-  }
 
-  @media (max-width: $small-width) {
-    min-height: 390px;
+    @media (max-width: $small-width) {
+      min-height: 390px;
 
-    .no-webp {
-      background-image: url("../img/promo-back_small.jpg");
+      .no-webp & {
+        background-image: url("../img/promo-back_small.jpg");
 
-      @media (min-resolution: 2dppx) {
-        background-image: url("../img/promo-back_small@2x.jpg");
+        @media (min-resolution: 2dppx) {
+          background-image: url("../img/promo-back_small@2x.jpg");
+        }
       }
-    }
 
-    .webp {
-      background-image: url("../img/promo-back_small.webp");
+      .webp & {
+        background-image: url("../img/promo-promo_small.webp");
 
-      @media (min-resolution: 2dppx) {
-        background-image: url("../img/promo-back_small@2x.webp");
+        @media (min-resolution: 2dppx) {
+          background-image: url("../img/promo-back_small@2x.webp");
+        }
       }
     }
   }
 }
 
+.page-header--nojs::before {
+    @media (max-width: $medium-width) {
 
-@media (max-width: $medium-width) {
-  .page-header--nojs::before {
     content: "";
     display: block;
     position: absolute;
@@ -103,5 +103,13 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+  }
+
+  @media (max-width: $small-width) {
+    background-image: url("../img/promo-back_small.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/promo-back_small@2x.jpg");
+    }
   }
 }
