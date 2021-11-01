@@ -75,16 +75,12 @@
   position: absolute;
   vertical-align: auto;
   top: 2px;
-  left: 16.5%;
-  width: 100px;
+  left: 45%;
+  width: min-content;
   height: 60px;
   font-weight: 700;
   font-size: 28px;
   line-height: 38px;
   color: $accent-main;
   text-align: right;
-
-  @media (max-width: $small-width) {
-    left: 22%;
-  }
 }
