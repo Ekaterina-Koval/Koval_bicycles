@@ -29,6 +29,7 @@
 
   @media (max-width: $medium-width) {
     flex-direction: column;
+    justify-content: flex-start;
     height: 100%;
     padding: 100px 0;
     background-color: $basic-white;
