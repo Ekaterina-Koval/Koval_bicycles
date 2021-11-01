@@ -55,8 +55,10 @@
     margin-bottom: 16px;
     width: 47%;
 
-    &:nth-child(2n+1) {
-      margin-right: 6%;
+    @media (min-width: 768px) {
+      &:nth-child(2n+1) {
+        margin-right: 6%;
+      }
     }
   }
 
@@ -65,6 +67,7 @@
     width: 100%;
     font-size: 18px;
     line-height: 34px;
+    margin-right: 0;
   }
 }
 
