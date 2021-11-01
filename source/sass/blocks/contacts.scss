@@ -9,7 +9,7 @@
 
   @media (max-width: $small-width) {
     width: 100%;
-    padding-top: 30px;
+    padding-top: 31px;
   }
 }
 
@@ -59,7 +59,7 @@
   }
 
   @media (max-width: $small-width) {
-    justify-content: center;
+    justify-content: flex-start;
     text-align: center;
     font-size: 16px;
     line-height: 22px;
@@ -72,6 +72,14 @@
 
   &--phone {
     fill: none;
+  }
+
+    @media (max-width: $small-width) {
+      margin: 0 15px;
+
+    &--phone {
+      margin: -4px 14px 0 42px;
+    }
   }
 }
 
