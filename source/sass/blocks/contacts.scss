@@ -74,8 +74,8 @@
     fill: none;
   }
 
-    @media (max-width: $small-width) {
-      margin: 0 15px;
+  @media (max-width: $small-width) {
+    margin: 0 15px;
 
     &--phone {
       margin: -4px 14px 0 42px;

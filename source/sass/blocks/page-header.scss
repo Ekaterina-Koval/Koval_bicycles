@@ -84,8 +84,7 @@
 }
 
 .page-header--nojs::before {
-    @media (max-width: $medium-width) {
-
+  @media (max-width: $medium-width) {
     content: "";
     display: block;
     position: absolute;
